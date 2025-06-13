@@ -1,3 +1,4 @@
+/* Reset dan Styling Dasar */
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +11,11 @@ body {
     background-color: #fef5f7;
 }
 
+/* Header */
 header {
     background-color: #ff6b81;
     color: white;
-    padding: 0.5rem;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -22,50 +24,53 @@ header {
     align-items: center;
 }
 header h1 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 nav a {
     color: white;
-    margin: 0 0.3rem;
+    margin: 0 1rem;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 nav a:hover {
     color: #ffebee;
 }
 
+/* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255,105,129,0.9), rgba(255,105,129,0.9)), url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1');
+    background: linear-gradient(rgba(255,105,129,0.7), rgba(255,105,129,0.7)), url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 1.5rem 0.5rem;
+    padding: 5rem 2rem;
+    animation: fadeIn 1s ease-in;
 }
 .hero h2 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    overflow-wrap: break-word;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 .hero p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    overflow-wrap: break-word;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 .cta-button {
     background-color: #ff8fa3;
     color: white;
     border: none;
-    padding: 0.5rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    border-radius: 20px;
-    margin: 0.2rem;
-    display: inline-block;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0.5rem;
 }
 .cta-button:hover {
     background-color: #ff4757;
+    transform: scale(1.1);
 }
 .cta-button.secondary {
     background-color: #ffcccb;
@@ -75,66 +80,66 @@ nav a:hover {
     background-color: #ffb8b8;
 }
 
+/* Animasi */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Features Section */
 .features {
-    padding: 1.5rem 0.5rem;
+    padding: 3rem 2rem;
     text-align: center;
     background-color: #fff;
 }
 .features h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #ff6b81;
 }
 .feature-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
     margin: auto;
 }
 .feature-card {
     background-color: #ffebee;
-    padding: 0.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(255,105,129,0.2);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255,105,129,0.2);
+    transition: transform 0.3s;
+}
+.feature-card:hover {
+    transform: translateY(-8px);
 }
 .feature-card img {
-    width: 25px;
-    margin-bottom: 0.2rem;
-}
-.feature-card h3 {
-    font-size: 0.8rem;
-}
-.feature-card p {
-    font-size: 0.7rem;
-    overflow-wrap: break-word;
+    width: 50px;
+    margin-bottom: 1rem;
 }
 
+/* Pricing Table */
 .pricing {
-    padding: 1.5rem 0.5rem;
+    padding: 3rem 2rem;
     background-color: #fef5f7;
     text-align: center;
 }
 .pricing h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #ff6b81;
 }
 .pricing table {
     margin: auto;
     border-collapse: collapse;
     width: 100%;
+    max-width: 800px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
 }
 .pricing th, .pricing td {
     border: 1px solid #ffd6dd;
-    padding: 0.4rem;
-    font-size: 0.7rem;
+    padding: 1rem;
 }
 .pricing th {
     background-color: #ff6b81;
@@ -144,17 +149,18 @@ nav a:hover {
     background-color: #ff8fa3;
     color: white;
     border: none;
-    padding: 0.3rem 0.6rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 12px;
-    font-size: 0.7rem;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 .order-button:hover {
     background-color: #ff4757;
 }
 
+/* Form Kontak */
 .contact {
-    padding: 1.5rem 0.5rem;
+    padding: 3rem 2rem;
     background-color: #fff;
     text-align: center;
 }
@@ -162,76 +168,47 @@ nav a:hover {
     color: #ff6b81;
 }
 .contact p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 .contact form {
-    max-width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 .contact label, .contact input, .contact select, .contact textarea {
     display: block;
     width: 100%;
-    margin: 0.2rem 0;
+    margin: 0.5rem 0;
 }
 .contact input, .contact select, .contact textarea {
-    padding: 0.4rem;
+    padding: 0.8rem;
     border: 1px solid #ffd6dd;
-    border-radius: 6px;
-    font-size: 0.8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff7f8;
 }
 .contact textarea {
-    min-height: 60px;
+    resize: vertical;
+    min-height: 120px;
 }
 .contact button {
     background-color: #ff6b81;
     color: white;
     border: none;
-    padding: 0.5rem 1.2rem;
-    font-size: 0.8rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
     cursor: pointer;
-    border-radius: 18px;
+    border-radius: 25px;
 }
 .contact button:hover {
     background-color: #ff4757;
 }
 
-.loading {
-    margin-top: 0.6rem;
-    font-size: 0.8rem;
-    color: #ff6b81;
-    display: flex;
-    align-items: center;
-}
-.loading::after {
-    content: '';
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #ff8fa3;
-    border-top: 2px solid transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-left: 0.2rem;
-}
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-.success {
-    margin-top: 0.6rem;
-    font-size: 0.8rem;
-    color: #ff4757;
-    background-color: #ffebee;
-    padding: 0.3rem;
-    border-radius: 4px;
-}
-.hidden {
-    display: none;
-}
-
+/* Footer */
 footer {
     background-color: #ff6b81;
     color: white;
     text-align: center;
-    padding: 0.8rem;
+    padding: 1.5rem;
 }
 footer a {
     color: #ffebee;
@@ -241,36 +218,18 @@ footer a:hover {
     color: #fff7f8;
 }
 
-@media (max-width: 480px) {
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 1rem;
+    }
     .hero h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
-    .hero p {
-        font-size: 0.8rem;
+    .feature-grid {
+        grid-template-columns: 1fr;
     }
-    .cta-button {
-        font-size: 0.8rem;
-        padding: 0.4rem 1rem;
-    }
-    .feature-card img {
-        width: 20px;
-    }
-    .feature-card h3 {
-        font-size: 0.7rem;
-    }
-    .feature-card p {
-        font-size: 0.6rem;
-    }
-    .pricing th, .pricing td {
-        font-size: 0.6rem;
-    }
-    .order-button {
-        font-size: 0.6rem;
-    }
-    .contact input, .contact select, .contact textarea {
-        font-size: 0.7rem;
-    }
-    .contact button {
-        font-size: 0.7rem;
-    }
-    }
+}
