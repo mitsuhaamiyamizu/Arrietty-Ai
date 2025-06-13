@@ -15,7 +15,7 @@ body {
 header {
     background-color: #ff6b81;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -24,13 +24,13 @@ header {
     align-items: center;
 }
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 nav a {
     color: white;
-    margin: 0 0.5rem;
+    margin: 0 0.3rem;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: color 0.3s;
 }
 nav a:hover {
@@ -39,21 +39,21 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255,105,129,0.7), rgba(255,105,129,0.7)), url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1');
+    background: linear-gradient(rgba(255,105,129,0.8), rgba(255,105,129,0.8)), url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.5rem;
 }
 .hero h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     overflow-wrap: break-word;
 }
 .hero p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
     overflow-wrap: break-word;
 }
@@ -61,12 +61,12 @@ nav a:hover {
     background-color: #ff8fa3;
     color: white;
     border: none;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: background-color 0.3s, transform 0.2s;
-    margin: 0.3rem;
+    margin: 0.2rem;
     display: inline-block;
 }
 .cta-button:hover {
@@ -89,50 +89,51 @@ nav a:hover {
 
 /* Features Section */
 .features {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.5rem;
     text-align: center;
     background-color: #fff;
 }
 .features h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #ff6b81;
 }
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
     max-width: 1200px;
     margin: auto;
 }
 .feature-card {
     background-color: #ffebee;
-    padding: 0.8rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(255,105,129,0.2);
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255,105,129,0.2);
     transition: transform 0.3s;
 }
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 .feature-card img {
-    width: 30px;
-    margin-bottom: 0.3rem;
+    width: 25px;
+    margin-bottom: 0.2rem;
 }
 .feature-card h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .feature-card p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    overflow-wrap: break-word;
 }
 
 /* Pricing Table */
 .pricing {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.5rem;
     background-color: #fef5f7;
     text-align: center;
 }
 .pricing h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #ff6b81;
 }
 .pricing table {
@@ -141,12 +142,12 @@ nav a:hover {
     width: 100%;
     max-width: 800px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
 }
 .pricing th, .pricing td {
     border: 1px solid #ffd6dd;
-    padding: 0.6rem;
+    padding: 0.4rem;
 }
 .pricing th {
     background-color: #ff6b81;
@@ -156,11 +157,11 @@ nav a:hover {
     background-color: #ff8fa3;
     color: white;
     border: none;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 12px;
     transition: background-color 0.3s;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .order-button:hover {
     background-color: #ff4757;
@@ -168,7 +169,7 @@ nav a:hover {
 
 /* Form Kontak */
 .contact {
-    padding: 2rem 1rem;
+    padding: 1.5rem 0.5rem;
     background-color: #fff;
     text-align: center;
 }
@@ -176,7 +177,7 @@ nav a:hover {
     color: #ff6b81;
 }
 .contact p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 .contact form {
     max-width: 100%;
@@ -185,27 +186,27 @@ nav a:hover {
 .contact label, .contact input, .contact select, .contact textarea {
     display: block;
     width: 100%;
-    margin: 0.3rem 0;
+    margin: 0.2rem 0;
 }
 .contact input, .contact select, .contact textarea {
-    padding: 0.5rem;
+    padding: 0.4rem;
     border: 1px solid #ffd6dd;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
     background-color: #fff7f8;
 }
 .contact textarea {
     resize: vertical;
-    min-height: 80px;
+    min-height: 60px;
 }
 .contact button {
     background-color: #ff6b81;
     color: white;
     border: none;
-    padding: 0.6rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 .contact button:hover {
     background-color: #ff4757;
@@ -213,8 +214,8 @@ nav a:hover {
 
 /* Loading dan Success */
 .loading {
-    margin-top: 0.8rem;
-    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
     color: #ff6b81;
     display: flex;
     align-items: center;
@@ -223,24 +224,24 @@ nav a:hover {
 .loading::after {
     content: '';
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 2px solid #ff8fa3;
     border-top: 2px solid transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin-left: 0.3rem;
+    margin-left: 0.2rem;
 }
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
 .success {
-    margin-top: 0.8rem;
-    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
     color: #ff4757;
     background-color: #ffebee;
-    padding: 0.4rem;
-    border-radius: 5px;
+    padding: 0.3rem;
+    border-radius: 4px;
 }
 .hidden {
     display: none;
@@ -251,7 +252,7 @@ footer {
     background-color: #ff6b81;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 footer a {
     color: #ffebee;
@@ -261,42 +262,40 @@ footer a:hover {
     color: #fff7f8;
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 0.5rem;
-    }
-    nav {
-        margin-top: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    nav a {
-        margin: 0.3rem 0;
-    }
+/* Responsif Tambahan untuk Layar Sangat Kecil */
+@media (max-width: 480px) {
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .hero p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .cta-button {
-        font-size: 0.9rem;
-        padding: 0.5rem 1.2rem;
-    }
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-    .pricing table {
         font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+    .feature-card img {
+        width: 20px;
+    }
+    .feature-card h3 {
+        font-size: 0.7rem;
+    }
+    .feature-card p {
+        font-size: 0.6rem;
+    }
+    .pricing th, .pricing td {
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+    .order-button {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.5rem;
     }
     .contact input, .contact select, .contact textarea {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .contact button {
-        font-size: 0.8rem;
-        padding: 0.5rem 1.2rem;
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
     }
     }
