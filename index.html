@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Arrietty - AI: Bot WA Pilihan</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -115,6 +115,8 @@
             <textarea id="pesan" name="pesan" placeholder="Ceritain kebutuhanmu, ya!"></textarea>
             
             <button type="submit">Kirim Pesan</button>
+            <div id="loading" class="loading hidden">Mengirim...</div>
+            <div id="success" class="success hidden">Pesan siap dikirim! Cek WhatsApp ya!</div>
         </form>
     </section>
 
