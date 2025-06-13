@@ -2,13 +2,13 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <base href="https://aamiyamizu.github.io/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrietty - AI: Bot WA Pilihan</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Arrietty - AI</h1>
         <nav>
@@ -19,6 +19,7 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <h2>Arrietty - AI: Bot WA Pilihan, Secantik Dirimu!</h2>
         <p>Pengen bot WhatsApp yang nggak cuma pintar, tapi juga bikin hati adem? Di Sho, kamu bisa temuin jawabannya!</p>
@@ -26,28 +27,29 @@
         <a href="https://whatsapp.com/channel/0029Vb73ZeuKgsO2aDgUmO13" target="_blank" class="cta-button secondary">Info Lebih Lanjut</a>
     </section>
 
+    <!-- Fitur -->
     <section class="features" id="features">
         <h2>Kenapa Harus Pilih Arrietty - AI?</h2>
         <div class="feature-grid">
             <div class="feature-card">
                 <img src="https://img.icons8.com/ios-filled/50/ff6b81/kawaii.png" alt="Desain Lucu">
                 <h3>Desain Lucu & Gampang</h3>
-                <p>Desainnya cute dan user-friendly!</p>
+                <p>Desainnya cute dan super user-friendly!</p>
             </div>
             <div class="feature-card">
                 <img src="https://img.icons8.com/ios-filled/50/ff6b81/artificial-intelligence.png" alt="AI Canggih">
                 <h3>AI Canggih</h3>
-                <p>Bisa ngobrol, bikin konten, dan lebih!</p>
+                <p>Bisa ngobrol seru, bantu bikin konten, dan banyak lagi!</p>
             </div>
             <div class="feature-card">
                 <img src="https://img.icons8.com/ios-filled/50/ff6b81/premium.png" alt="Fitur Premium">
                 <h3>Fitur Premium</h3>
-                <p>Unlimited Chats, Content Creation, Prioritas.</p>
+                <p>Unlimited Chats, Advanced Content Creation, Prioritas Layanan.</p>
             </div>
             <div class="feature-card">
                 <img src="https://img.icons8.com/ios-filled/50/ff6b81/settings.png" alt="Kustomisasi">
                 <h3>Kustomisasi</h3>
-                <p>Fitur disesuaikan buatmu!</p>
+                <p>Fitur disesuaikan sesuai kebutuhanmu!</p>
             </div>
             <div class="feature-card">
                 <img src="https://img.icons8.com/ios-filled/50/ff6b81/wallet.png" alt="Harga Ramah">
@@ -57,11 +59,12 @@
             <div class="feature-card">
                 <img src="https://img.icons8.com/ios-filled/50/ff6b81/customer-support.png" alt="Pelayanan Ramah">
                 <h3>Pelayanan Ramah</h3>
-                <p>Support kayak temen sendiri!</p>
+                <p>Tim support kayak temen sendiri!</p>
             </div>
         </div>
     </section>
 
+    <!-- Tabel Harga -->
     <section class="pricing" id="pricing">
         <h2>Paket Sewa Arrietty - AI</h2>
         <table>
@@ -92,12 +95,16 @@
         </table>
     </section>
 
+    <!-- Form Kontak -->
     <section class="contact" id="contact">
         <h2>Hubungi Sho Sekarang!</h2>
         <p>Yuk, bikin WhatsApp-mu jadi lebih ceria dan menyenangkan!</p>
         <form id="contact-form">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+            
+            <label for="whatsapp">Nomor WhatsApp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Masukkan nomor WhatsApp kamu (contoh: 081234567890)" required pattern="[0-9]{10,13}">
             
             <label for="paket">Pilih Paket:</label>
             <select id="paket" name="paket">
@@ -111,15 +118,14 @@
             <textarea id="pesan" name="pesan" placeholder="Ceritain kebutuhanmu, ya!"></textarea>
             
             <button type="submit">Kirim Pesan</button>
-            <div id="loading" class="loading hidden">Mengirim...</div>
-            <div id="success" class="success hidden">Pesan siap dikirim! Cek WhatsApp ya!</div>
         </form>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2025 Arrietty - AI by Sho. <a href="https://wa.me/6283833382033" target="_blank">WhatsApp</a> | <a href="https://whatsapp.com/channel/0029Vb73ZeuKgsO2aDgUmO13" target="_blank">Channel WA</a></p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-    </html>
+            </html>
