@@ -1,4 +1,3 @@
-// Smooth Scroll untuk Navigasi
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -7,7 +6,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Form Submission
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const nama = document.getElementById('nama').value;
@@ -39,7 +37,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     }
 });
 
-// Order Button di Tabel Harga
 document.querySelectorAll('.order-button').forEach(button => {
     button.addEventListener('click', () => {
         const paket = button.getAttribute('data-paket').toLowerCase();
