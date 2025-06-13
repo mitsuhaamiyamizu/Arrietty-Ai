@@ -1,4 +1,3 @@
-/* Reset dan Styling Dasar */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ body {
     background-color: #fef5f7;
 }
 
-/* Header */
 header {
     background-color: #ff6b81;
     color: white;
@@ -31,15 +29,13 @@ nav a {
     margin: 0 0.3rem;
     text-decoration: none;
     font-size: 0.8rem;
-    transition: color 0.3s;
 }
 nav a:hover {
     color: #ffebee;
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255,105,129,0.8), rgba(255,105,129,0.8)), url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1');
+    background: linear-gradient(rgba(255,105,129,0.9), rgba(255,105,129,0.9)), url('https://images.unsplash.com/photo-1614850715649-1d0106293bd1');
     background-size: cover;
     background-position: center;
     color: white;
@@ -47,9 +43,9 @@ nav a:hover {
     padding: 1.5rem 0.5rem;
 }
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     overflow-wrap: break-word;
 }
 .hero p {
@@ -65,13 +61,11 @@ nav a:hover {
     font-size: 0.9rem;
     cursor: pointer;
     border-radius: 20px;
-    transition: background-color 0.3s, transform 0.2s;
     margin: 0.2rem;
     display: inline-block;
 }
 .cta-button:hover {
     background-color: #ff4757;
-    transform: scale(1.05);
 }
 .cta-button.secondary {
     background-color: #ffcccb;
@@ -81,13 +75,11 @@ nav a:hover {
     background-color: #ffb8b8;
 }
 
-/* Animasi */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Features Section */
 .features {
     padding: 1.5rem 0.5rem;
     text-align: center;
@@ -99,9 +91,9 @@ nav a:hover {
 }
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr;
     gap: 0.5rem;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
 }
 .feature-card {
@@ -109,10 +101,6 @@ nav a:hover {
     padding: 0.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(255,105,129,0.2);
-    transition: transform 0.3s;
-}
-.feature-card:hover {
-    transform: translateY(-3px);
 }
 .feature-card img {
     width: 25px;
@@ -126,7 +114,6 @@ nav a:hover {
     overflow-wrap: break-word;
 }
 
-/* Pricing Table */
 .pricing {
     padding: 1.5rem 0.5rem;
     background-color: #fef5f7;
@@ -140,7 +127,6 @@ nav a:hover {
     margin: auto;
     border-collapse: collapse;
     width: 100%;
-    max-width: 800px;
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -148,6 +134,7 @@ nav a:hover {
 .pricing th, .pricing td {
     border: 1px solid #ffd6dd;
     padding: 0.4rem;
+    font-size: 0.7rem;
 }
 .pricing th {
     background-color: #ff6b81;
@@ -160,14 +147,12 @@ nav a:hover {
     padding: 0.3rem 0.6rem;
     cursor: pointer;
     border-radius: 12px;
-    transition: background-color 0.3s;
     font-size: 0.7rem;
 }
 .order-button:hover {
     background-color: #ff4757;
 }
 
-/* Form Kontak */
 .contact {
     padding: 1.5rem 0.5rem;
     background-color: #fff;
@@ -181,7 +166,6 @@ nav a:hover {
 }
 .contact form {
     max-width: 100%;
-    margin: auto;
 }
 .contact label, .contact input, .contact select, .contact textarea {
     display: block;
@@ -193,10 +177,8 @@ nav a:hover {
     border: 1px solid #ffd6dd;
     border-radius: 6px;
     font-size: 0.8rem;
-    background-color: #fff7f8;
 }
 .contact textarea {
-    resize: vertical;
     min-height: 60px;
 }
 .contact button {
@@ -212,14 +194,12 @@ nav a:hover {
     background-color: #ff4757;
 }
 
-/* Loading dan Success */
 .loading {
     margin-top: 0.6rem;
     font-size: 0.8rem;
     color: #ff6b81;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .loading::after {
     content: '';
@@ -247,7 +227,6 @@ nav a:hover {
     display: none;
 }
 
-/* Footer */
 footer {
     background-color: #ff6b81;
     color: white;
@@ -262,7 +241,6 @@ footer a:hover {
     color: #fff7f8;
 }
 
-/* Responsif Tambahan untuk Layar Sangat Kecil */
 @media (max-width: 480px) {
     .hero h2 {
         font-size: 1.2rem;
@@ -284,18 +262,15 @@ footer a:hover {
         font-size: 0.6rem;
     }
     .pricing th, .pricing td {
-        font-size: 0.7rem;
-        padding: 0.3rem;
+        font-size: 0.6rem;
     }
     .order-button {
         font-size: 0.6rem;
-        padding: 0.2rem 0.5rem;
     }
     .contact input, .contact select, .contact textarea {
         font-size: 0.7rem;
     }
     .contact button {
         font-size: 0.7rem;
-        padding: 0.4rem 1rem;
     }
     }
